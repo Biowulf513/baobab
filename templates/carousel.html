@@ -1,398 +1,54 @@
 {% load staticfiles %}
-<div class="container">
-    <div class="row">
-        <div class="hidden-xs hidden-sm"><!-- ПК версия -->
-            <div id="Carousel" class="carousel slide">
 
-                <ol class="carousel-indicators">
-                    <li data-target="#Carousel" data-slide-to="0"></li>
-                    <li data-target="#Carousel" data-slide-to="1" class="active"></li>
-                    <li data-target="#Carousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-
-                <div class="item">
-                    <div class="news_label col-md-3">
-                        <a href="#" class="">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/future2.jpg' %}">
-                                        <div class="card-block">
-{#                                            <figure class="profile">#}
-{#                                                <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">#}
-{#                                            </figure>#}
-                                            <h4 class="card-title mt-3">Будующие мероприятия</h4>
-{#                                            <div class="meta">#}
-{#                                                <a>Friends</a>#}
-{#                                            </div>#}
-{#                                            <div class="card-text">#}
-{#                                                Tawshif is a web designer living in Bangladesh.#}
-{#                                            </div>#}
-                                        </div>
-{#                                        <div class="card-footer">#}
-{#                                            <span class="float-right">Joined in 2013</span>#}
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-{#                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>#}
-{#                                        </div>#}
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_label col-md-3">
-                    <a href="#" class="">
-
-                    <div class="container-fluid">
-                    <div class="row">
-                    <div class="card">
-                    <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/7.jpg' %}">
-                    <div class="card-block">
-                    <figure class="profile">
-                        <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">
-                    </figure>
-                    <h4 class="card-title mt-3">Грандиозное событие</h4>
-                    <div class="meta">
-                        <a>Будующее</a>
-                    </div>
-                    <div class="card-text">
-                        Массовое мероприятие Русский силомер.
-                    </div>
-                    </div>
-                    <div class="card-footer">
-                    <span class="float-right">15 Декабря</span>
-                    {#                        <span><i class=""></i>75 Friends</span>#}
-                    <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    </a>
-                    </div>
-                    <div class="news_label col-md-3">
-                    <a href="#" class="">
-
-                    <div class="container-fluid">
-                    <div class="row">
-                    <div class="card">
-                    <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/8.jpg' %}">
-                    <div class="card-block">
-                    <figure class="profile">
-                        <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">
-                    </figure>
-                    <h4 class="card-title mt-3">Грандиозное событие</h4>
-                    <div class="meta">
-                        <a>Будующее</a>
-                    </div>
-                    <div class="card-text">
-                        Массовое мероприятие Русский силомер.
-                    </div>
-                    </div>
-                    <div class="card-footer">
-                    <span class="float-right">15 Декабря</span>
-                    {#                        <span><i class=""></i>75 Friends</span>#}
-                    <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    </a>
-                    </div>
-                    <div class="news_label col-md-3">
-                    <a href="#" class="">
-
-                    <div class="container-fluid">
-                    <div class="row">
-                    <div class="card">
-                    <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/9.jpg' %}">
-                    <div class="card-block">
-                    <figure class="profile">
-                        <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">
-                    </figure>
-                    <h4 class="card-title mt-3">Грандиозное событие</h4>
-                    <div class="meta">
-                        <a>Будующее</a>
-                    </div>
-                    <div class="card-text">
-                        Массовое мероприятие Русский силомер.
-                    </div>
-                    </div>
-                    <div class="card-footer">
-                    <span class="float-right">15 Декабря</span>
-                    {#                        <span><i class=""></i>75 Friends</span>#}
-                    <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    </a>
-                    </div>
-                </div><!--.item-->
-
-                <div class="item active">
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/1.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">
-                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Будующее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Декабря</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                          </a>
-                      </div>
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/2.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Будующее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Октября</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                          </a>
-  </div>
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/3.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">                                            </figure>
-                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Прошедшее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Сентября</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                          </a>
-  </div>
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/4.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">                                            </figure>
-                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Прошедшее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Сентября</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </a>
-                      </div>
-                </div><!--.item-->
-
-                <div class="item">
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/5.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">                                            </figure>
-                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Прошедшее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Сентября</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </a>
-                      </div>
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/6.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">                                            </figure>
-                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Прошедшее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Сентября</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </a>
+<link rel="stylesheet" type="text/css" href="{% static 'baobab/theme/vendor/carousel/slick.min.css' %}" >
+<link rel="stylesheet" type="text/css" href="{% static 'baobab/theme/css/carousel.css' %}" >
+<div class="project-carousel">
+    <div class="project-strip">
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/1.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/2.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/3.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/4.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/5.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/6.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/7.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/8.jpg' %}" alt=""/></div>
+    </div>
+    <div class="project-screen">
+        <div class="project-detail">
+{#            <div class="project"><img src="http://unsplash.it/578/361/?image=130" alt=""/></div>#}
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/1.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/2.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/3.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/4.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/5.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/6.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/7.jpg' %}" alt=""/></div>
+        <div class="project"><img src="{% static 'baobab/theme/img/carousel/8.jpg' %}" alt=""/></div>
+    </div>
+        <div class="screen-frame"></div>
+    </div>
 </div>
-                      <div class="news_label col-md-3">
-                          <a href="#" class="">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/7.jpg' %}">
-                                        <div class="card-block">
-                                            <figure class="profile">
-                                                <img src="{% static 'baobab/theme/test_carousel/flag.gif' %}" class="profile-avatar" alt="">                                            </figure>
-                                            </figure>
-                                            <h4 class="card-title mt-3">Грандиозное событие</h4>
-                                            <div class="meta">
-                                                <a>Прошедшее</a>
-                                            </div>
-                                            <div class="card-text">
-                                                Массовое мероприятие Русский силомер.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="float-right">15 Сентября</span>
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </a>
-                      </div>
-                      <div class="news_label col-md-3">
-                        <a href="#" class="">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{% static 'baobab/theme/test_carousel/past2.jpg' %}">
-                                        <div class="card-block">
-{#                                            <figure class="profile">#}
-{#                                                <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">#}
-{#                                            </figure>#}
-                                            <h4 class="card-title mt-3">Прошедшие мероприятия</h4>
-{#                                            <div class="meta">#}
-{#                                                <a>Friends</a>#}
-{#                                            </div>#}
-{#                                            <div class="card-text">#}
-{#                                                Tawshif is a web designer living in Bangladesh.#}
-{#                                            </div>#}
-                                        </div>
-{#                                        <div class="card-footer">#}
-{#                                            <span class="float-right">Joined in 2013</span>#}
-                            {#                        <span><i class=""></i>75 Friends</span>#}
-{#                                            <button id="news_button" class="btn btn-secondary float-right btn-sm">Подробнее</button>#}
-{#                                        </div>#}
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-                </div><!--.item-->
+<script src="{% static 'baobab/theme/vendor/jquery/jquery.min.js'%}"></script>
+<script src="{% static 'baobab/theme/vendor/carousel/slick.min.js'%}"></script>
+{#<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>#}
 
-{#                        </div><!--.carousel-inner-->#}
-{#                          <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>#}
-{#                          <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>#}
-{#                        </div><!--.Carousel-->#}
 
-                </div>
+<script>$(".project-detail").slick({
+	slidesToShow: 1,
+	arrows: false,
+	asNavFor: '.project-strip',
+	autoplay: true,
+	autoplaySpeed: 2500
+});
 
-                <div class="carousel_navigation">
-                    <!-- Навигация для карусели -->
-                    <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-                    <a class="carousel-control left" href="#Carousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-                    <a class="carousel-control right" href="#Carousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <div class="visible-xs visible-sm"><!-- Мобильная версия -->
-            <div class="news_label col-md-3 col-sm-6 col-xs-6"><a href="#" class="">{% include "carousel_link.html" %}</a></div>
-            <div class="news_label col-md-3 col-sm-6 col-xs-6"><a href="#" class="">{% include "carousel_link.html" %}</a></div>
-        </div>
-    </div><!--.container-->
-</div>
+$(".project-strip").slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	arrows: false,
+	asNavFor: '.project-detail',
+	dots: false,
+	infinite: true,
+	centerMode: true,
+	focusOnSelect: true
+});
+</script>
