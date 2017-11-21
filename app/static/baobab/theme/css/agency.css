@@ -3,9 +3,12 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Comfortaa', cursive;
 }
 .text-muted {
   color: #777777;
@@ -42,7 +45,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Comfortaa', cursive;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -152,7 +156,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -218,30 +222,29 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #8e909a;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
-/*header {*/
-  /*!*background-image: url(../img/header-bg.jpg);*!*/
-  /*background-image: url('../img/header-bg.jpg');*/
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: scroll;*/
-  /*background-position: center center;*/
-  /*-webkit-background-size: cover;*/
-  /*-moz-background-size: cover;*/
-  /*background-size: cover;*/
-  /*-o-background-size: cover;*/
-  /*text-align: center;*/
-  /*color: white;*/
-/*}*/
-/*header .intro-text {*/
-  /*padding-top: 100px;*/
-  /*padding-bottom: 50px;*/
-/*}*/
+header {
+  background-image: url('../img/header-bg1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
 /*header .intro-text .intro-lead-in {*/
   /*font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   /*font-style: italic;*/
@@ -278,6 +281,7 @@ fieldset[disabled] .btn-xl.active {
     /*margin-bottom: 50px;*/
   /*}*/
 /*}*/
+
 section {
   padding: 100px 0;
 }
@@ -299,7 +303,7 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
-.service-heading {
+.actions-heading {
   margin: 15px 0;
   text-transform: none;
 }
