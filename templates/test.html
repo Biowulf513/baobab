@@ -1,4 +1,13 @@
 {#<p>{{ context.test }}</p>#}
+<style>
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+</style>
+
 <nav class="navbar navbar-inverse navbar-main navbar-fixed-top">
     <div class="container">
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -11,11 +20,14 @@
 
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav social">
-                <li><a id="social_button" href="https://vk.com/baobab_ekab"><i class="fa fa-lg fa-vk"></i></a></li>
-                <li><a id="social_button" href="INSTAGRAM_LINK"><i class="fa fa-lg fa-instagram"></i></a></li>
-                <li><a id="social_button" href="YOUTUBE_LINK"><i class="fa fa-lg fa-telegram"></i></a></li>
-            </ul>
+            <div class="center-block">
+                <ul class="nav nav-pills navbar-nav social">
+                    <li><a id="social_button" href="https://vk.com/baobab_ekab"><i class="fa fa-lg fa-vk"></i></a></li>
+                    <li><a id="social_button" href="INSTAGRAM_LINK"><i class="fa fa-lg fa-instagram"></i></a></li>
+                    <li><a id="social_button" href="YOUTUBE_LINK"><i class="fa fa-lg fa-telegram"></i></a></li>
+                </ul>
+            </div>
+
 {#                <div class="navbar-brand hidden-xs">#}
 {#                    <a class="white-circle" href="index.php">#}
 {#                        <img class="logo" src="http://excitive.me/demo/temp/logo.svg" alt="Logo">#}
