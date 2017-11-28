@@ -8,90 +8,120 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 programs-item">
-                <a href="#programsModal1" class="programs-link" data-toggle="modal">
-                    <div class="programs-hover">
-                        <div class="programs-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal1" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-search fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <a href="#programsModal1"  data-toggle="modal">#}
+{#                    <div class="programs-caption">#}
+{#                        <h4>Вместе с мамой</h4>#}
+{#                        <p class="text-muted">1-3 года</p>#}
+{#                    </div>#}
+{#                </a>#}
+{##}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal2" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/startup-framework.png' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Музыка с мамой </h4>#}
+{#                    <p class="text-muted">1-3 года</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal3" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/master_klassy.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Мастер-классы</h4>#}
+{#                    <p class="text-muted">Для малышей и родителей</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal4" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/uchimsya_igraya.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Учимся играя</h4>#}
+{#                    <p class="text-muted">4-7 лет</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal5" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/escape.png' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Музыкальные занятия</h4>#}
+{#                    <p class="text-muted">4-7 лет</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal6" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/masterskaya.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Мастерская сказки</h4>#}
+{#                    <p class="text-muted">4-10 лет</p>#}
+{#                </div>#}
+{#            </div>#}
+
+            {% for program in programs%}
+                <div class="col-md-4 col-sm-6 programs-item">
+                    <a href="#programs{{ program.id }}" class="programs-link" data-toggle="modal">
+                        <div class="programs-hover">
+                            <div class="programs-hover-content">
+                                <i class="fa fa-search fa-3x"></i>
+                            </div>
                         </div>
-                    </div>
-                    <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">
-                </a>
-                <div class="programs-caption">
-                    <h4>Вместе с мамой</h4>
-                    <p class="text-muted">1-3 года</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 programs-item">
-                <a href="#programsModal2" class="programs-link" data-toggle="modal">
-                    <div class="programs-hover">
-                        <div class="programs-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
+                        <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <a href="#programsModal1"  data-toggle="modal">
+                        <div class="programs-caption">
+                            <h4>{{ program.name }}</h4>
+                            <p class="text-muted">{{ program.for_group }}</p>
                         </div>
-                    </div>
-                    <img src="{% static 'baobab/theme/img/programs/startup-framework.png' %}" class="img-responsive" alt="">
-                </a>
-                <div class="programs-caption">
-                    <h4>Музыка с мамой </h4>
-                    <p class="text-muted">1-3 года</p>
+                    </a>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 programs-item">
-                <a href="#programsModal3" class="programs-link" data-toggle="modal">
-                    <div class="programs-hover">
-                        <div class="programs-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="{% static 'baobab/theme/img/programs/master_klassy.jpg' %}" class="img-responsive" alt="">
-                </a>
-                <div class="programs-caption">
-                    <h4>Мастер-классы</h4>
-                    <p class="text-muted">Для малышей и родителей</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 programs-item">
-                <a href="#programsModal4" class="programs-link" data-toggle="modal">
-                    <div class="programs-hover">
-                        <div class="programs-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="{% static 'baobab/theme/img/programs/uchimsya_igraya.jpg' %}" class="img-responsive" alt="">
-                </a>
-                <div class="programs-caption">
-                    <h4>Учимся играя</h4>
-                    <p class="text-muted">4-7 лет</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 programs-item">
-                <a href="#programsModal5" class="programs-link" data-toggle="modal">
-                    <div class="programs-hover">
-                        <div class="programs-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="{% static 'baobab/theme/img/programs/escape.png' %}" class="img-responsive" alt="">
-                </a>
-                <div class="programs-caption">
-                    <h4>Музыкальные занятия</h4>
-                    <p class="text-muted">4-7 лет</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 programs-item">
-                <a href="#programsModal6" class="programs-link" data-toggle="modal">
-                    <div class="programs-hover">
-                        <div class="programs-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="{% static 'baobab/theme/img/programs/masterskaya.jpg' %}" class="img-responsive" alt="">
-                </a>
-                <div class="programs-caption">
-                    <h4>Мастерская сказки</h4>
-                    <p class="text-muted">4-10 лет</p>
-                </div>
-            </div>
+
+
+            {% endfor %}
+
+
+
+{#        <a href="{% url 'one_route' route_id=route.id %}">{{ route.code }}#}
+
+
         </div>
     </div>
 </section>
