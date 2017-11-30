@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce import HTMLField
 
 class Price(models.Model):
     class Meta:
@@ -23,17 +24,7 @@ class Programs(models.Model):
 
     name = models.CharField('Название' ,max_length=30)
     for_group = models.CharField('Для кого?', max_length=30)
-    description = models.TextField('Описание')
-    price = models.ForeignKey (Price, verbose_name='Цены', on_delete=models.CASCADE)
-
-
-
-    # def save(self, *args, **kwargs):
-    #     from rusilomer.utils import location_geoconing
-    #     geocod = location_geoconing(self.city, self.venue)
-    #     self.gps_lat = geocod['lat']
-    #     self.gps_lng = geocod['lng']
-    #     super(Location, self).save(*args,**kwargs)
+    description = HTMLField('Content')
 
     def __str__(self):
         return '%s ' %(self.name)
