@@ -230,19 +230,24 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg1.jpg');
+  /*background-image: url('../img/header-bg1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;*/
   text-align: center;
   color: white;
 }
+
+header img{
+ max-width:100%;
+}
+
 header .intro-text {
-  padding-top: 300px;
+  padding-top: 51px;
   padding-bottom: 50px;
 }
 /*header .intro-text .intro-lead-in {*/
@@ -310,6 +315,9 @@ section h3.section-subheading {
 #programs .programs-item {
   margin: 0 0 15px;
   right: 0;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
 }
 #programs .programs-item .programs-link {
   display: block;
