@@ -1,0 +1,309 @@
+{% load staticfiles %}
+<section id="programs" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Программы</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="row">
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal1" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-search fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <a href="#programsModal1"  data-toggle="modal">#}
+{#                    <div class="programs-caption">#}
+{#                        <h4>Вместе с мамой</h4>#}
+{#                        <p class="text-muted">1-3 года</p>#}
+{#                    </div>#}
+{#                </a>#}
+{##}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal2" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/startup-framework.png' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Музыка с мамой </h4>#}
+{#                    <p class="text-muted">1-3 года</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal3" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/master_klassy.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Мастер-классы</h4>#}
+{#                    <p class="text-muted">Для малышей и родителей</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal4" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/uchimsya_igraya.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Учимся играя</h4>#}
+{#                    <p class="text-muted">4-7 лет</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal5" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/escape.png' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Музыкальные занятия</h4>#}
+{#                    <p class="text-muted">4-7 лет</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-md-4 col-sm-6 programs-item">#}
+{#                <a href="#programsModal6" class="programs-link" data-toggle="modal">#}
+{#                    <div class="programs-hover">#}
+{#                        <div class="programs-hover-content">#}
+{#                            <i class="fa fa-plus fa-3x"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <img src="{% static 'baobab/theme/img/programs/masterskaya.jpg' %}" class="img-responsive" alt="">#}
+{#                </a>#}
+{#                <div class="programs-caption">#}
+{#                    <h4>Мастерская сказки</h4>#}
+{#                    <p class="text-muted">4-10 лет</p>#}
+{#                </div>#}
+{#            </div>#}
+
+            {% for program in programs%}
+                <div class="col-md-4 col-sm-6 programs-item">
+                    <a href="#Modal{{ program.id }}" class="programs-link" data-toggle="modal">
+                        <div class="programs-hover">
+                            <div class="programs-hover-content">
+                                <i class="fa fa-search fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <a href="#Modal{{ program.id }}" data-toggle="modal">
+                        <div class="programs-caption">
+                            <h4>{{ program.name }}</h4>
+                            <p class="text-muted">{{ program.for_group }}</p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+
+
+
+{#        <a href="{% url 'one_route' route_id=route.id %}">{{ route.code }}#}
+
+
+        </div>
+    </div>
+</section>
+{% for program in programs%}
+    <!-- MODAL -->
+    <div class="programs-modal modal fade" id="Modal{{ program.id }}"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>{{ program.name }}</h2>
+                                <p class="item-intro text-muted">{{ program.for_group }}</p>
+                                <img class="img-responsive img-centered" src="{% static 'baobab/theme/img/programs/dreams-preview.png' %}" alt="">
+                                {{ program.description | safe }}
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть направление</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+<!-- Все цены -->
+    <div class="programs-modal modal fade" id="priceModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-offset-4 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 my_planHeader my_plan1">
+                                            <div class="my_planTitle">Plan 1</div>
+                                            <div class="my_planPrice">Пробное занятие</div>
+                                            <div class="my_planDuration"> </div>
+                                            <a type="button" class="btn btn-default">Sign Up</a>
+                                        </div>
+                                        <div class="col-xs-4 my_planHeader my_plan2">
+                                            <div class="my_planTitle">Plan 2</div>
+                                            <div class="my_planPrice">Абонемент на 4 занятия</div>
+                                            <div class="my_planDuration">per month</div>
+                                            <a type="button" class="btn btn-default">Sign Up</a>
+                                        </div>
+                                        <div class="col-xs-4 my_planHeader my_plan3">
+                                            <div class="my_planTitle">Plan 3</div>
+                                            <div class="my_planPrice">Абонемент на 8 занятий</div>
+                                            <div class="my_planDuration">per month</div>
+                                            <a type="button" class="btn btn-default">Sign Up</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my_featureRow">
+                                <div class="col-xs-12 col-sm-4 my_feature">
+                                    Вместе с мамой
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan1">
+                                            <i>100</i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan2">
+                                            <i class="fa fa-check my_check"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan3">
+                                            <i class="fa fa-check my_check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my_featureRow">
+                                <div class="col-xs-12 col-sm-4 my_feature">
+                                    Музыка с мамой
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan1">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan2">
+                                            <i>200</i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan3">
+                                            <i class="fa fa-check my_check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my_featureRow">
+                                <div class="col-xs-12 col-sm-4 my_feature">
+                                    Мастер-классы
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan1">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan2">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan3">
+                                            <i>300</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my_featureRow">
+                                <div class="col-xs-12 col-sm-4 my_feature">
+                                    Учимся играя
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan1">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan2">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan3">
+                                            <i class="fa fa-check my_check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my_featureRow">
+                                <div class="col-xs-12 col-sm-4 my_feature">
+                                    Музыкальные занятия
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan1">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan2">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan3">
+                                            <i class="fa fa-check my_check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my_featureRow">
+                                <div class="col-xs-12 col-sm-4 my_feature">
+                                    Мастерская сказки
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan1">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan2">
+                                            <i class="fa"></i>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 my_planFeature my_plan3">
+                                            <i class="fa fa-check my_check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть прайс</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+

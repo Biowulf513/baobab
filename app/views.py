@@ -7,4 +7,4 @@ from app.models import Programs
 
 def index(request):
     programs = Programs.objects.all()
-    return render(request, 'index.html', {'programs':programs})
+    return render(request, 'work/index.html', {'programs':programs})
