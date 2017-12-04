@@ -97,21 +97,23 @@
 {#            </div>#}
 
             {% for program in programs%}
-                <div class="col-md-4 col-sm-6 programs-item">
-                    <a href="#Modal{{ program.id }}" class="programs-link" data-toggle="modal">
-                        <div class="programs-hover">
-                            <div class="programs-hover-content">
-                                <i class="fa fa-search fa-3x"></i>
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="programs-item">
+                        <a href="#Modal{{ program.id }}" class="programs-link" data-toggle="modal">
+                            <div class="programs-hover">
+                                <div class="programs-hover-content">
+                                    <i class="fa fa-search fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">
-                    </a>
-                    <a href="#Modal{{ program.id }}" data-toggle="modal">
-                        <div class="programs-caption">
-                            <h4>{{ program.name }}</h4>
-                            <p class="text-muted">{{ program.for_group }}</p>
-                        </div>
-                    </a>
+                            <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                        <a href="#Modal{{ program.id }}" data-toggle="modal">
+                            <div class="programs-caption">
+                                <h4>{{ program.name }}</h4>
+                                <p class="text-muted">{{ program.for_group }}</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             {% endfor %}
 
@@ -143,8 +145,8 @@
                                 <p class="item-intro text-muted">{{ program.for_group }}</p>
                                 <img class="img-responsive img-centered" src="{% static 'baobab/theme/img/programs/dreams-preview.png' %}" alt="">
                                 {{ program.description | safe }}
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть направление</button>
                             </div>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть направление</button>
                         </div>
                     </div>
                 </div>
