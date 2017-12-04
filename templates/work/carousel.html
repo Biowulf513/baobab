@@ -1,0 +1,56 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'baobab/theme/vendor/carousel/slick.min.css' %}" >
+<link rel="stylesheet" type="text/css" href="{% static 'baobab/theme/css/carousel.css' %}" >
+<div class="hidden-xs">
+    <div class="project-carousel">
+        <div class="project-strip">
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/1.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/2.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/3.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/4.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/5.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/6.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/7.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/8.jpg' %}" alt=""/></div>
+        </div>
+        <div class="project-screen">
+            <div class="project-detail">
+    {#            <div class="project"><img src="http://unsplash.it/578/361/?image=130" alt=""/></div>#}
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/1.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/2.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/3.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/4.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/5.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/6.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/7.jpg' %}" alt=""/></div>
+            <div class="project"><img src="{% static 'baobab/theme/img/carousel/8.jpg' %}" alt=""/></div>
+        </div>
+            <div class="screen-frame"></div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'baobab/theme/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'baobab/theme/vendor/carousel/slick.min.js' %}"></script>
+{#<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>#}
+
+
+<script>$(".project-detail").slick({
+	slidesToShow: 1,
+	arrows: false,
+	asNavFor: '.project-strip',
+	autoplay: true,
+	autoplaySpeed: 2500
+});
+
+$(".project-strip").slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	arrows: false,
+	asNavFor: '.project-detail',
+	dots: false,
+	infinite: true,
+	centerMode: true,
+	focusOnSelect: true
+});
+</script>
