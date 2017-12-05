@@ -8,3 +8,6 @@ from app.models import Programs
 def index(request):
     programs = Programs.objects.all()
     return render(request, 'work/index.html', {'programs':programs})
+
+def test1(request):
+    return render(request, 'style_test.html' )
