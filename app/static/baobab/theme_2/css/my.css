@@ -70,6 +70,215 @@ body{
 	font-style:normal
 }
 /*Base END*/
+/*sprite START*/
+.sprite--paper{
+	box-shadow:-.3125rem .1875rem .3125rem rgba(50,50,50,.4),-.3125rem .9375rem 1.25rem rgba(50,50,50,.4),.3125rem .9375rem 1.25rem rgba(50,50,50,.4)
+}
+
+.sprite{
+	background-image:url(../img/sprite.png);
+	background-repeat:no-repeat;
+	display:block
+}
+
+.sprite--clip{
+	background-position:0 -44.25rem;
+	width:6.8125rem;
+	height:4.8125rem
+}
+
+.sprite--eraser_blue{
+	background-position:0 -90.9375rem;
+	width:6.5625rem;
+	height:7.125rem
+}
+
+.sprite--eraser_yellow{
+	background-position:0 -168.4375rem;
+	width:12.75rem;
+	height:11.3125rem
+}
+
+.sprite--girl{
+	background-position:0 -115.8125rem;
+	width:4.5rem;
+	height:8.8125rem
+}
+
+.sprite--imp{
+	background-position:0 -135.3125rem;
+	width:8.125rem;
+	height:10.5625rem
+}
+
+.sprite--indian{
+	background-position:0 -124.9375rem;
+	width:6.25rem;
+	height:10.0625rem
+}
+
+.sprite--paper{
+	background-position:0 -180.0625rem;
+	width:14.375rem;
+	height:14rem
+}
+
+.sprite--pencil{
+	background-position:0 -157.1875rem;
+	width:8.8125rem;
+	height:10.9375rem
+}
+
+.sprite--play{
+	background-position:0 -60.1875rem;
+	width:5.375rem;
+	height:5.375rem
+}
+
+.sprite--sharpener{
+	background-position:0 -106.75rem;
+	width:10.4375rem;
+	height:8.75rem
+}
+
+.sprite--tape{
+	background-position:0 -146.1875rem;
+	width:13.75rem;
+	height:10.6875rem
+}
+
+.sprite--abc{
+	background-position:0 -13.875rem;
+	width:3.1875rem;
+	height:3.625rem
+}
+
+.sprite--academic_cap{
+	background-position:0 -7.625rem;
+	width:4.1875rem;
+	height:2.75rem
+}
+
+.sprite--book{
+	background-position:0 -10.6875rem;
+	width:3.5rem;
+	height:2.875rem
+}
+
+.sprite--bus{
+	background-position:0 -5.0625rem;
+	width:3.8125rem;
+	height:2.25rem
+}
+
+.sprite--call{
+	background-position:0 -1.125rem;
+	width:1.625rem;
+	height:1.625rem
+}
+
+.sprite--car{
+	background-position:0 -3.0625rem;
+	width:4.0625rem;
+	height:1.6875rem
+}
+
+.sprite--carrot{
+	background-position:0 -17.8125rem;
+	width:4.4375rem;
+	height:3.6875rem
+}
+
+.sprite--d_sign{
+	background-position:0 -84rem;
+	width:5.125rem;
+	height:6.625rem
+}
+
+.sprite--e_sign{
+	background-position:0 -34.5rem;
+	width:3.3125rem;
+	height:4.375rem
+}
+
+.sprite--fox{
+	background-position:0 -210.5625rem;
+	width:21.5rem;
+	height:23.25rem
+}
+
+.sprite--i_sign{
+	background-position:0 -98.375rem;
+	width:7rem;
+	height:8.0625rem
+}
+
+.sprite--k_sign{
+	background-position:0 -54.625rem;
+	width:6.625rem;
+	height:5.25rem
+}
+
+.sprite--l_sign{
+	background-position:0 -194.375rem;
+	width:18.875rem;
+	height:15.875rem
+}
+
+.sprite--locomotive{
+	background-position:0 -65.875rem;
+	width:5.125rem;
+	height:5.375rem
+}
+
+.sprite--map_red-pin{
+	background-position:0 -25.875rem;
+	width:3.375rem;
+	height:3.9375rem
+}
+
+.sprite--map_yellow-pin{
+	background-position:0 -21.8125rem;
+	width:3.1875rem;
+	height:3.75rem
+}
+
+.sprite--paint{
+	background-position:0 -30.125rem;
+	width:3.4375rem;
+	height:4.0625rem
+}
+
+.sprite--phone{
+	background-position:0 0;
+	width:.8125rem;
+	height:.8125rem
+}
+
+.sprite--snake{
+	background-position:0 -49.375rem;
+	width:3.75rem;
+	height:4.9375rem
+}
+
+.sprite--tiger{
+	background-position:0 -39.1875rem;
+	width:4.5rem;
+	height:4.75rem
+}
+
+.sprite--whirligig{
+	background-position:0 -77.75rem;
+	width:6.25rem;
+	height:5.9375rem
+}
+
+.sprite--y_sign{
+	background-position:0 -71.5625rem;
+	width:6.4375rem;
+	height:5.875rem
+}
+/*sprite END*/
 /*navbar START*/
 .header{
 	display:-webkit-box;
@@ -602,4 +811,31 @@ body{
 	box-shadow:0 .3125rem 1.25rem 0 rgba(174,0,0,.4)
 }
 
+/*input[name=name]{
+	text-transform:capitalize
+}
+
+input[name=name]::-webkit-input-placeholder{
+	text-transform:none
+}
+
+input[name=name]:-ms-input-placeholder{
+	text-transform:none
+}
+
+input[name=name]::placeholder{
+	text-transform:none
+}
+
+input:focus{
+	border-color:#fcaf17
+}
+
+input:focus.error{
+	border-color:red
+}
+
+label.error{
+	position:absolute;
+	left:-624.9375rem*/
 /*navbar END*/
