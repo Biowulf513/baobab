@@ -16,14 +16,16 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from filebrowser.sites import site
-from app.views import index, test1
+from app.views import index, test, test1, test2
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^admin/filebrowser/', include(site.urls)),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^$', index, name='home'),
-    url(r'^test1$', test1, name='test'),
+    url(r'^test$', test, name='home2'),
+    url(r'^test1$', test1, name='test1'),
+    url(r'^test2$', test2, name='test2'),
     ]
 
 # if settings.DEBUG:
