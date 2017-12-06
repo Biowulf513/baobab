@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<div class="main-about_container">
+  <section class="main main-about" id="gallery">
+    <div class="main-about__icon sprite sprite--whirligig"></div>
+    <div class="main-about__image sprite sprite--paper sprite--paper_left">
+      <div class="main-about__image sprite sprite--imp"></div>
+    </div>
+    <div class="main-about__image sprite sprite--paper sprite--paper_right">
+      <div class="main-about__image sprite sprite--indian"></div>
+    </div>
+    <h2 class="main-about__title">Главное о Бэби-клуб​е за 2 минуты</h2>
+    <div class="main-about__video-container video-item" style="background-image: url('img/poster_main-video.jpg');">
+      <video class="video-movie" id="main-about__video" controls="" preload="none" poster="img/poster_main-video.jpg">
+        <source src="files/media/about_baby-club.mp4" type="video/mp4">
+        <source src="files/media/about_baby-club.webm" type="video/webm">
+        <source src="files/media/about_baby-club.ogv" type="video/ogg">
+        <p>Ваш браузер не поддерживает HTML5 видео. Пожалуйста, обновите версию браузера.</p>
+      </video>
+      <button class="video-button main-about__video-button sprite sprite--play" onclick="mainVideoBtn()"></button>
+    </div>
+  </section>
+</div>

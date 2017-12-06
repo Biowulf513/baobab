@@ -1,0 +1,66 @@
+{% load staticfiles %}
+{#<div class="advantages_container">#}
+{#  <div class="wrapper">#}
+{#    <section class="main advantages" id="programs">#}
+{#        {% for program in programs%}#}
+{#            <div class="col-md-4 col-sm-6 ">#}
+{#                <div class="programs-item">#}
+{#                    <a href="#Modal{{ program.id }}" class="programs-link" data-toggle="modal">#}
+{#                        <div class="programs-hover">#}
+{#                            <div class="programs-hover-content">#}
+{#                                <i class="fa fa-search fa-3x"></i>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <img src="{% static 'baobab/theme/img/programs/s_mamoy.jpg' %}" class="img-responsive" alt="">#}
+{#                    </a>#}
+{#                    <a href="#Modal{{ program.id }}" data-toggle="modal">#}
+{#                        <div class="programs-caption">#}
+{#                            <h4>{{ program.name }}</h4>#}
+{#                            <p class="text-muted">{{ program.for_group }}</p>#}
+{#                        </div>#}
+{#                    </a>#}
+{#                </div>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </section>#}
+{#  </div>#}
+{#</div>#}
+
+<div class="advantages_container">
+  <div class="wrapper">
+    <section class="main advantages" id="programs">
+      <div class="advantages__icon sprite sprite--k_sign"></div>
+      <h2 class="advantages__title">Бэби-клуб - это ведущая в России сеть детских клубов с авторской системой развития интеллекта</h2>
+      <ul class="advantages__list" id="show-awards">
+        <li class="advantages__item">
+          <div class="advantages__item-header"><span class="spincrement">16</span></div>
+          <div class="advantages__item-section">лет</div>
+          <div class="advantages__item-footer">
+            <div class="advantages__item-footer_text">составляет опыт работы с детьми</div>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__item-header"><span class="spincrement">12000</span></div>
+          <div class="advantages__item-section">детей</div>
+          <div class="advantages__item-footer">
+            <div class="advantages__item-footer_text">ежедневно <br>занимаются в клубах</div>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__item-header"><span class="spincrement">260</span></div>
+          <div class="advantages__item-section">центров</div>
+          <div class="advantages__item-footer">
+            <div class="advantages__item-footer_text">раннего развития открыты в России и за рубежом</div>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__item-header"><span class="spincrement">2000</span></div>
+          <div class="advantages__item-section">малышей</div>
+          <div class="advantages__item-footer">
+            <div class="advantages__item-footer_text">успешно прошли обучение <br>по методу «Бэби-клуба»</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
