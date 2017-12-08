@@ -7,7 +7,7 @@ body,html{
 	width:100%;
 	height:100%;
 	margin: 0px;
-	
+
 }
 
 ul{
@@ -814,27 +814,21 @@ body{
 /*input[name=name]{
 	text-transform:capitalize
 }
-
 input[name=name]::-webkit-input-placeholder{
 	text-transform:none
 }
-
 input[name=name]:-ms-input-placeholder{
 	text-transform:none
 }
-
 input[name=name]::placeholder{
 	text-transform:none
 }
-
 input:focus{
 	border-color:#fcaf17
 }
-
 input:focus.error{
 	border-color:red
 }
-
 label.error{
 	position:absolute;
 	left:-624.9375rem*/
