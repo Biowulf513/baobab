@@ -21,20 +21,20 @@
 
 }
 
-@font-face{
+/*@font-face{*/
 
-	font-family:'Story';
+	/*font-family:'Story';*/
 
-	src:url("http://127.0.0.1:8000/static/baobab/theme_3/fonts/stroy/story.eot");
+	/*src:url("http://127.0.0.1:8000/static/baobab/theme_3/fonts/stroy/story.eot");*/
 
-	src:url("http://127.0.0.1:8000/static/baobab/theme_3/fonts/stroy/story.eot#iefix") format("embedded-opentype"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.woff2") format("woff2"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.woff") format("woff"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.ttf") format("truetype"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.svg#storyregular") format("svg");
+	/*src:url("http://127.0.0.1:8000/static/baobab/theme_3/fonts/stroy/story.eot#iefix") format("embedded-opentype"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.woff2") format("woff2"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.woff") format("woff"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.ttf") format("truetype"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.svg#storyregular") format("svg");*/
 
-	font-weight:400;
+	/*font-weight:400;*/
 
-	font-style:normal;
+	/*font-style:normal;*/
 
 
-}
+/*}*/
 
 body{
 
@@ -56,19 +56,53 @@ h3{
 /*.navbar-default .a{*/
     /*color: #fff;*/
 /*}*/
-.menu-tab{
-    border-width: .4375rem;
-}
 
+.menu-tab .navbar{
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: #ef6525;
+    height: 75px;
+    padding: auto;
+
+    border-top-style: solid;
+    border-width: 7px 0 0 0;
+    border-color: #fcaf17;
+}
 
 .navbar-default .navbar-nav>.active>a{
     background-color: #fcaf17;
+    color: white;
+    /*min-height: 180px;*/
+    /*padding-top: 15px;*/
+    border-radius: 0 0 .825rem .825rem;
+    box-shadow: 0 0.2125rem 0 0 rgba(0,0,0,.1);
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
+    min-height: 75px;
+    padding-top: 15px;
+    width: auto;
+    line-height: 4.6875rem;
 }
 
 
 
-.menu-tab navbar{
-    margin-bottom: 0;
+
+/*ul .navbar-nav {*/
+    /*padding: 10px;*/
+/*}*/
+
+.navbar{
+    min-height: 60px;
+    /*padding-top: 15px;*/
+}
+
+.logo-text{
+	font-size:1rem;
+	text-align:center;
+    color: white;
 }
 
 
