@@ -64,8 +64,8 @@ body{
 
 @font-face{
 	font-family:'Story';
-	src:url(../fonts/story.eot);
-	src:url(../fonts/storyd41d.eot?#iefix) format("embedded-opentype"),url(../fonts/story.woff2) format("woff2"),url(../fonts/story.woff) format("woff"),url(../fonts/story.ttf) format("truetype"),url(../fonts/story.svg#storyregular) format("svg");
+	src:url(../../theme_3/fonts/story/story.eot);
+	src:url(../../theme_3/fonts/story/storyd41d.eot?#iefix) format("embedded-opentype"),url(../../theme_3/fonts/story/story.woff2) format("woff2"),url(../../theme_3/fonts/story/story.woff) format("woff"),url(../../theme_3/fonts/story/story.ttf) format("truetype"),url(../../theme_3/fonts/story/story.svg#storyregular) format("svg");
 	font-weight:400;
 	font-style:normal
 }

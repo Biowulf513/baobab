@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from filebrowser.sites import site
-from app.views import index, test, test1, test2
+from app.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^test$', test, name='home2'),
     url(r'^test1$', test1, name='test1'),
     url(r'^test2$', test2, name='test2'),
+    url(r'^test3$', test3, name='test3'),
     ]
 
 # if settings.DEBUG:

@@ -18,3 +18,6 @@ def test1(request):
 
 def test2(request):
     return render(request, 'style_test2.html')
+
+def test3(request):
+    return render(request, 'theme_3/index.html')

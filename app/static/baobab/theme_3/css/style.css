@@ -1,0 +1,74 @@
+@font-face{
+
+	font-family:'Direct';
+
+	src:url("/static/baobab/theme_3/fonts/direct/direct.eot");
+
+	src:url("/static/baobab/theme_3/fonts/direct/direct.eot#iefix")
+    format("embedded-opentype"),
+    url("/static/baobab/theme_3/fonts/direct/direct.woff2")
+    format("woff2"),
+    url("/static/baobab/theme_3/fonts/direct/direct.woff")
+    format("woff"),
+    url("/static/baobab/theme_3/fonts/direct/direct.ttf")
+    format("truetype"),
+    url("/static/baobab/theme_3/fonts/direct/direct.svg#directrgbold")
+    format("svg");
+
+	font-weight:400;
+
+	font-style:normal
+
+}
+
+@font-face{
+
+	font-family:'Story';
+
+	src:url("http://127.0.0.1:8000/static/baobab/theme_3/fonts/stroy/story.eot");
+
+	src:url("http://127.0.0.1:8000/static/baobab/theme_3/fonts/stroy/story.eot#iefix") format("embedded-opentype"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.woff2") format("woff2"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.woff") format("woff"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.ttf") format("truetype"),url("http://127.0.0.1:8000/static/baobab/theme_2/fonts/story.svg#storyregular") format("svg");
+
+	font-weight:400;
+
+	font-style:normal;
+
+
+}
+
+body{
+
+    /*font-family:Comfortaa;*/
+    font-family: Direct;
+
+}
+
+h3{
+    font-family: Direct;
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+    padding-top: 5.625rem;
+    color: #235e92;
+    text-align: center;
+    color: #fff;
+}
+
+/*.navbar-default .a{*/
+    /*color: #fff;*/
+/*}*/
+.menu-tab{
+    border-width: .4375rem;
+}
+
+
+.navbar-default .navbar-nav>.active>a{
+    background-color: #fcaf17;
+}
+
+
+
+.menu-tab navbar{
+    margin-bottom: 0;
+}
+
+
