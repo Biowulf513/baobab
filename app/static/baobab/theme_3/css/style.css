@@ -53,56 +53,77 @@ h3{
     color: #fff;
 }
 
-/*.navbar-default .a{*/
-    /*color: #fff;*/
-/*}*/
-
-.menu-tab .navbar{
-    margin-bottom: 0;
-}
 .navbar-default {
     background-color: #ef6525;
-    height: 75px;
-    padding: auto;
-
-    border-top-style: solid;
-    border-width: 7px 0 0 0;
-    border-color: #fcaf17;
+    border-color: #faae17;
+    border-style: solid none none;
+    border-width: 7px 0px 0px;
+    height: 82px;
 }
-
-.navbar-default .navbar-nav>.active>a{
-    background-color: #fcaf17;
-    color: white;
-    /*min-height: 180px;*/
-    /*padding-top: 15px;*/
-    border-radius: 0 0 .825rem .825rem;
-    box-shadow: 0 0.2125rem 0 0 rgba(0,0,0,.1);
-}
-
-.navbar-default .navbar-nav>li>a{
-    color: white;
-    min-height: 75px;
-    padding-top: 15px;
-    width: auto;
-    line-height: 4.6875rem;
-}
-
-
-
-
-/*ul .navbar-nav {*/
-    /*padding: 10px;*/
-/*}*/
-
 .navbar{
-    min-height: 60px;
-    /*padding-top: 15px;*/
+    margin-bottom: 0px;
+}
+.navbar-logo{
+    margin-left: 7px;
+    width: 216px;
+    padding-top: 12px;
+}
+.navbar-logo .logo-text{
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+.nav {
+    padding-left: 49px;
+}
+.navbar-nav {
+    height: 75px;
+}
+.navbar-default .navbar-nav > li > a{
+    height: 75px;
+    width: auto;
+    padding-top: 26px;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    text-decoration: underline
 }
 
-.logo-text{
-	font-size:1rem;
-	text-align:center;
-    color: white;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover{
+    color: #fff;
+    background-color: #faae17;
+    text-decoration: none;
+    border-radius: 0 0 .825rem .825rem;
+    /*box-shadow: 0 0.3125rem 0.9375rem 0 rgba(0,0,0,.2);*/
+    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.7);
 }
 
+    /*==========  Non-Mobile First Method  ==========*/
 
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }

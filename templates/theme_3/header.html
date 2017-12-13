@@ -1,0 +1,84 @@
+{% load staticfiles %}
+{#<main class="main_container">#}
+<div class="mobile-logo_container">
+    <div class="wrapper">
+        <div class="mobile-logo">
+            <a class="mobile-logo__link" href="index.html">
+                <div class="mobile-logo__image"><img class="mobile-logo__image-pic" src="img/logo.png" width="200" height="auto"></div>
+            </a>
+        </div>
+    <div class="mobile-logo__text">Бережное развитие интеллекта</div>
+    </div>
+</div>
+<div class="main-info_container">
+    <div class="wrapper">
+        <section class="main main-info"  id="page-top">
+            <div class="main-info__top">
+                <div class="main-info__top-left">
+                    <h1 class="main-info__title">Детский центр <br>Баобаб</h1>
+                    <p class="main-info__text">Развивающие занятия для детей от 8 месяцев до 7 лет</p>
+                    <ul class="main-info__list">
+                        <li class="main-info__item">
+                            <div class="main-info__item-icon">
+                                <div class="main-info__item-icon_pic sprite sprite--abc"></div>
+                            </div>
+                            <div class="main-info__item-title">Развитие речи <br>и мелкой моторики</div>
+                        </li>
+                        <li class="main-info__item">
+                            <div class="main-info__item-icon">
+                                <div class="main-info__item-icon_pic sprite sprite--book"></div>
+                            </div>
+                            <div class="main-info__item-title">Знакомство <br>с цифрами и буквами</div>
+                        </li>
+                        <li class="main-info__item">
+                            <div class="main-info__item-icon">
+                                <div class="main-info__item-icon_pic sprite sprite--academic_cap"></div>
+                            </div>
+                            <div class="main-info__item-title">Подготовка к учебе <br>в школе</div>
+                        </li>
+                        <li class="main-info__item">
+                            <div class="main-info__item-icon">
+                                <div class="main-info__item-icon_pic sprite sprite--paint"></div>
+                            </div>
+                            <div class="main-info__item-title">Развитие творческих <br>способностей</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-info__top-right">
+                    <div class="main-info__circle"></div>
+                    <div class="main-info__image"></div>
+                </div>
+                <a class="main-info__call" href="tel:3828021" aria-hidden="true">
+                    <div class="main-info__call_pic sprite sprite--call"></div>
+                </a>
+            </div>
+        </section>
+        <section class="main order">
+            <div class="order-form_container">
+                <form class="order-form" id="main-form" onsubmit="yaCounter44275874.reachGoal('zayavka'); return true;">
+                    <fieldset class="order-form__header">
+                        <div class="order-form__title">Запишитесь на пробное <br>занятие прямо сейчас</div>
+                    </fieldset>
+                    <fieldset class="order-form__section">
+{#                        <input type="hidden" name="source" class="source" value="" />#}
+{#                        <input type="hidden" name="term" class="term" value="" />#}
+{#                        <input type="hidden" name="campaign" class="campaign" value="" />#}
+{#                        <input type="hidden" name="project_name" value="Baby-Club">#}
+{#                        <input type="hidden" name="admin_email" value="6397132@gmail.com">#}
+                        <input type="hidden" name="form_subject" value="Заявка на бесплатное пробное занятие">
+                        <input class="order-form__name" id="name" type="text" name="name" placeholder="Ваше имя" required>
+                        <input class="order-form__phone" id="phone" type="phone" name="phone" placeholder="Ваш телефон" required>
+                        <button class="order-form__button" id="send" type="submit">Записаться</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="order__image">
+                <div class="order__image-pic sprite sprite--tape"></div>
+                <div class="order__image-pic sprite sprite--pencil"></div>
+                <div class="order__image-pic sprite sprite--eraser_blue"></div>
+                <div class="order__image-pic sprite sprite--clip"></div>
+                <div class="order__image-pic sprite sprite--sharpener"></div>
+            </div>
+        </section>
+    </div>
+</div>
