@@ -25,20 +25,20 @@
         <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
         <meta name="msapplication-config" content="favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="{% static 'baobab/theme_2/css/my.css'%}">
+{#        <link rel="stylesheet" href="{% static 'baobab/theme_2/css/my.css'%}">#}
         <link rel="stylesheet" href="{% static 'baobab/theme_2/css/main.css'%}">
 {#        <link rel="stylesheet" type="text/css" href="{% static 'baobab/theme/vendor/bootstrap/css/bootstrap.min.css' %}" >#}
     {#    <link rel="stylesheet" href="css/main.css">#}
     </head>
     <body>
         {% include "theme_2/nav_bar.html" %}
-{#        {% include "theme_2/header.html" %}#}
-{#        {% include "theme_2/programs.html" %}#}
-{#        {% include "theme_2/actions.html" %}#}
-{#        {% include "theme_2/gallery.html" %}#}
-{#        {% include "theme_2/invite.html" %}#}
-{#        {% include "theme_2/footer.html" %}#}
-{#        {% include "theme_2/modal.html" %}#}
+        {% include "theme_2/header.html" %}
+        {% include "theme_2/programs.html" %}
+        {% include "theme_2/actions.html" %}
+        {% include "theme_2/gallery.html" %}
+        {% include "theme_2/invite.html" %}
+        {% include "theme_2/footer.html" %}
+        {% include "theme_2/modal.html" %}
 
         <script src="{% static 'baobab/theme_2/js/jquery/3.1.1/jquery.min.js' %}"></script>
         <script src="{% static 'baobab/theme_2/js/main.js' %}"></script>
