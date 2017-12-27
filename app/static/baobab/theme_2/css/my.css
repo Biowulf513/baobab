@@ -54,21 +54,21 @@ body{
 	}
 }
 
-@font-face{
-	font-family:'Direct';
-	src:url(../fonts/direct.eot);
-	src:url(../fonts/directd41d.eot?#iefix) format("embedded-opentype"),url(../fonts/direct.woff2) format("woff2"),url(../fonts/direct.woff) format("woff"),url(../fonts/direct.ttf) format("truetype"),url(../fonts/direct.svg#directrgbold) format("svg");
-	font-weight:400;
-	font-style:normal
-}
+/*@font-face{*/
+	/*font-family:'Direct';*/
+	/*src:url(../fonts/direct.eot);*/
+	/*src:url(../fonts/directd41d.eot?#iefix) format("embedded-opentype"),url(../fonts/direct.woff2) format("woff2"),url(../fonts/direct.woff) format("woff"),url(../fonts/direct.ttf) format("truetype"),url(../fonts/direct.svg#directrgbold) format("svg");*/
+	/*font-weight:400;*/
+	/*font-style:normal*/
+/*}*/
 
-@font-face{
-	font-family:'Story';
-	src:url(../../theme_3/fonts/story/story.eot);
-	src:url(../../theme_3/fonts/story/storyd41d.eot?#iefix) format("embedded-opentype"),url(../../theme_3/fonts/story/story.woff2) format("woff2"),url(../../theme_3/fonts/story/story.woff) format("woff"),url(../../theme_3/fonts/story/story.ttf) format("truetype"),url(../../theme_3/fonts/story/story.svg#storyregular) format("svg");
-	font-weight:400;
-	font-style:normal
-}
+/*@font-face{*/
+	/*font-family:'Story';*/
+	/*src:url(../../theme_3/fonts/story/story.eot);*/
+	/*src:url(../../theme_3/fonts/story/storyd41d.eot?#iefix) format("embedded-opentype"),url(../../theme_3/fonts/story/story.woff2) format("woff2"),url(../../theme_3/fonts/story/story.woff) format("woff"),url(../../theme_3/fonts/story/story.ttf) format("truetype"),url(../../theme_3/fonts/story/story.svg#storyregular) format("svg");*/
+	/*font-weight:400;*/
+	/*font-style:normal*/
+/*}*/
 /*Base END*/
 /*sprite START*/
 .sprite--paper{

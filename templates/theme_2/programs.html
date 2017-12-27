@@ -32,62 +32,21 @@
       <div class="advantages__icon sprite sprite--k_sign"></div>
       <h2 class="advantages__title">ПРОГРАММЫ</h2>
       <ul class="advantages__list" id="show-awards">
-        <li class="advantages__item">
-          <div class="advantages__item-header"></div>
-          <div class="advantages__item-section">лет</div>
-          <div class="advantages__item-footer">
-            <div class="advantages__item-footer_text">составляет опыт работы с детьми</div>
-          </div>
-        </li>
-{#        <li class="advantages__item">#}
-{#          <div class="advantages__item-header"><span class="spincrement">12000</span></div>#}
-{#          <div class="advantages__item-section">детей</div>#}
-{#          <div class="advantages__item-footer">#}
-{#            <div class="advantages__item-footer_text">ежедневно <br>занимаются в клубах</div>#}
-{#          </div>#}
-{#        </li>#}
-{#        <li class="advantages__item">#}
-{#          <div class="advantages__item-header"><span class="spincrement">260</span></div>#}
-{#          <div class="advantages__item-section">центров</div>#}
-{#          <div class="advantages__item-footer">#}
-{#            <div class="advantages__item-footer_text">раннего развития открыты в России и за рубежом</div>#}
-{#          </div>#}
-{#        </li>#}
-{#        <li class="advantages__item">#}
-{#          <div class="advantages__item-header"><span class="spincrement">2000</span></div>#}
-{#          <div class="advantages__item-section">малышей</div>#}
-{#          <div class="advantages__item-footer">#}
-{#            <div class="advantages__item-footer_text">успешно прошли обучение <br>по методу «Бэби-клуба»</div>#}
-{#          </div>#}
-{#        </li>#}
-{#        <li class="advantages__item">#}
-{#          <div class="advantages__item-header"><span class="spincrement">2000</span></div>#}
-{#          <div class="advantages__item-section">малышей</div>#}
-{#          <div class="advantages__item-footer">#}
-{#            <div class="advantages__item-footer_text">успешно прошли обучение <br>по методу «Бэби-клуба»</div>#}
-{#          </div>#}
-{#    </li>#}
-{#        <li class="advantages__item">#}
-{#          <div class="advantages__item-header"><span class="spincrement">2000</span></div>#}
-{#          <div class="advantages__item-section">малышей</div>#}
-{#          <div class="advantages__item-footer">#}
-{#            <div class="advantages__item-footer_text">успешно прошли обучение <br>по методу «Бэби-клуба»</div>#}
-{#          </div>#}
-{#    </li>#}
-{#        <li class="advantages__item">#}
-{#<div class="advantages__item-header"><span class="spincrement">2000</span></div>#}
-{#<div class="advantages__item-section">малышей</div>#}
-{#<div class="advantages__item-footer">#}
-{#<div class="advantages__item-footer_text">успешно прошли обучение <br>по методу «Бэби-клуба»</div>#}
-{#</div>#}
-{#</li>#}
-{#        <li class="advantages__item">#}
-{#<div class="advantages__item-header"><span class="spincrement">2000</span></div>#}
-{#<div class="advantages__item-section">малышей</div>#}
-{#<div class="advantages__item-footer">#}
-{#<div class="advantages__item-footer_text">успешно прошли обучение <br>по методу «Бэби-клуба»</div>#}
-{#</div>#}
-{#</li>#}
+        {% for program in programs%}
+            <li class="advantages__item">
+              <div class="advantages__item-header">
+                <a href="#">
+                    <div style="background: url('static/baobab/theme/img/programs/s_mamoy.jpg');width: auto; height: 230px;" class="img-responsive" alt=""></div>
+                </a>
+              </div>
+              <div class="advantages__item-footer">
+                <a href="#Modal{{ program.id }}" data-toggle="modal">
+                    <div class="advantages__item-footer_text">{{ program.name }}</div>
+                    <div class="advantages__item-footer_text">{{ program.for_group }}</div>
+                </a>
+              </div>
+            </li>
+        {% endfor %}
       </ul>
     </section>
   </div>
